@@ -1,0 +1,1 @@
+enum TimeRange { day, week, month, quarter, year, all }

@@ -1,0 +1,53 @@
+User {
+    "Id": String,
+    "Name": String,
+    "AccountName": String,
+    "Email": String,
+    "Password": String,
+    "Avatar": String,
+    "Transactions": [Transaction],
+    "Post": [Post],
+    "Money": Number,
+    "Feedback": Feedback,
+    "Reaction": Number, // đăng bài + reaction + comment
+}
+Transaction{
+    "UserId": String,
+    "Amount": String,
+    "Category": Category,
+    "Note": String,
+    "Date": Date,
+    "isExcluded": Boolean
+}
+Feedback{
+    "FeedBackId": String,
+    "UserId": String,
+    "Star": Int,
+    "Content": String,
+    "Date": Date
+}
+Post{
+    "PostID": String,
+    "UserId": String,
+    "Content": String,
+    "Subject": Topic,
+    "Date": Date,
+    "Comments": List[Comment],
+    "Reaction": Number,
+}
+Topic{
+    "TopicID": String,
+    "Name": String,
+}
+
+Comment{
+    "PostID": String,
+    "UserId": String,
+    "Content": String,
+}
+Category{
+    "CategoryID": String,
+    "Name": String,
+    "TransactionType": Boolean,
+}
+
