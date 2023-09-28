@@ -24,5 +24,5 @@ Implement the screens: Profile, Change Information, Rating, Setting and Navigati
   ![image](https://github.com/hoductrihcmut123/Mobile_assignment_UI/assets/76983358/2f2968b1-6cce-4800-9aef-9411bd4a9857)
 
 
-
+05/2022
 
